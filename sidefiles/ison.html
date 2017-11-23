@@ -1,0 +1,54 @@
+<!-- //3 server calls -->
+<!-- https://d1fqgomuxh4f5p.cloudfront.net/match-overview-widget/v2.1/i18n/en_GB.json
+
+https://e3-api.kambi.com/offering/api/v2/kambi/group/highlight.json?lang=en_GB&market=kambi&client_id=2&include=&betOffers=COMBINED&categoryGroup=COMBINED&displayDefault=true
+
+https://e3-api.kambi.com/offering/api/v3/kambi/listView/football/europa_league?lang=en_GB&market=kambi&client_id=2&include=&betOffers=COMBINED&categoryGroup=COMBINED&displayDefault=true -->
+
+<!doctype html>
+<html>
+<head>
+<script src="https://c3-static.kambi.com/sb-mobileclient/widget-api/1.0.0.32/kambi-widget-api.js"></script>
+   <title>Match Schedule Widget</title>
+   <meta charset="UTF-8">
+   <meta name="apple-mobile-web-app-title" content="Kambi">
+   <meta name="description" content="Match Schedule Widget">
+   <meta name="HandheldFriendly" content="True">
+   <meta name="MobileOptimized" content="320">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+   <meta name="fragment" content="!"/>
+
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="apple-mobile-web-app-title" content="">
+   
+ <script type="text/javascript">
+    var xhr = new XMLHttpRequest();
+    var xhrp;
+    debugger;
+   xhr.onreadystatechange = function() {
+      if(this.readyState == 4 && this.status == 200) {
+         //console.log(this.responseText);
+         xhrp = JSON.parse(this.responseText);
+         console.log(xhrp);
+      }
+   };
+   
+  
+   
+   
+   xhr.open("GET","https://e4-api.kambi.com/offering/api/v3/gruk/listView/football/england/premier_league.json?lang=en_GB&market=GB&client_id=2&channel_id=1&ncid=1510577690619&categoryGroup=COMBINED&displayDefault=true",true);
+        xhr.send(null);
+    
+    
+    
+    
+ </script>  
+</head>
+
+<body>
+   <div id="root"></div>
+<script type="text/javascript" src="common.js"></script><script type="text/javascript" src="app.js"></script></body>
+</html>
