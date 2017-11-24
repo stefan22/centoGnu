@@ -165,7 +165,10 @@ externalScripts();
             content += '<span class="KambiWidget-outcome__odds">' + odds[0].outcomes[2].oddsFractional + '</span></div>';
             content += '</div></a></div></div></div>';
 
-            debugger;
+            
+            
+           
+            
             if (count == 4) {
 
 
@@ -181,34 +184,20 @@ externalScripts();
               content += '</div>';
 
               //if not the last one avoid empty div
-              if (count != tevts) {
+              if (count < tevts -3) {
 
                 content += '<div class="item">';
 
               }
+              else {
+                
+                content += '</div>';
+                //less than four
+                break;
+              }
 
 
-            } //else if
-
-
-            //i is 3,2 or 1 to the end  
-            else if ((count >= tevts - 3) && (tevts % 4 != 0)) {
-              //run by just once
-              if (lastcall == 0) {
-                //open tags
-                content += '<div class="item">';
-                lastcall++;
-              } //if 
-
-            } //else if 
-            else if (count == tevts) {
-              //closing tags
-              content += '</div>';
-              break;
-
-
-            } //else if
-
+            } //else if multiple of four
 
           } //for
 
@@ -421,7 +410,7 @@ externalScripts();
 
 
           if (document.querySelector('.site-footer .container') != undefined || document.querySelector('.site-footer .container') != null) {
-            //debugger;
+           
             var fcon = document.querySelector('.site-footer .container');
             fcon.parentElement.insertBefore(banner, fcon);
 
