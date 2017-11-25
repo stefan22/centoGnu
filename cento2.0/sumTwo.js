@@ -306,7 +306,7 @@ externalScripts();
 
     mcssfour: function () {
       console.info('%c mcssfour \u221a', 'background:blue;color:white;');
-      var mainone = '@media screen and (max-width:320px) {#bigfoot a {margin-top:70px !important;}   #Carousel: height:135px; overflow:hidden;}  @media screen and (max-width:440px) {#Carousel: height:140px; overflow:hidden;}    #Carousel .KambiWidget-outcome._3VhzVuKZldCtRv5J2EPsSY:hover {background-color: #efbf2d !important; } .carousel-control {height:55px!important; width:55px !important; background:none repeat scroll 0 0 #032b34b8 !important; border-radius:50%!important;top:22%!important;opacity:.5; line-height:50px!important; font-size:50px!important;position:absolute;color:#0a2e36!important}.carousel{margin-bottom:0;position:relative} #bigfoot ._24d6f3pjhfa71-59bfd2pl{right:1.1%!important}._2BGlvm1kLFck9O2GFU4ylE{display:block!important;opacity:.7!important;cursor:pointer;background:linear-gradient(450deg,rgba(0,0,0,0.35) 16px,transparent);left:5!important}  ';
+      var mainone = '@media screen and (max-width:320px) {#bigfoot a {margin-top:70px !important;}   #Carousel: height:135px; overflow:hidden;}  @media screen and (max-width:440px) {#Carousel: height:140px; overflow:hidden;}    #Carousel .KambiWidget-outcome._3VhzVuKZldCtRv5J2EPsSY:hover {background-color: #efbf2d !important; } .carousel-control {height:55px!important; width:55px !important; background:none repeat scroll 0 0 #032b34b8 !important; border-radius:50%!important;top:22%!important;opacity:.5; line-height:50px!important; font-size:50px!important;position:absolute;color:#0a2e36!important}.carousel{margin-bottom:0;position:relative} #bigfoot ._24d6f3pjhfa71-59bfd2pl{right:0.5% !important;}._2BGlvm1kLFck9O2GFU4ylE{display:block!important;opacity:.7!important;cursor:pointer;background:linear-gradient(450deg,rgba(0,0,0,0.35) 16px,transparent);left:5!important}  ';
       var head = document.getElementsByTagName('head')[0];
 
       function addcss(css) {
@@ -380,6 +380,7 @@ externalScripts();
 
       style.innerHTML += 'a.right.carousel-control {} a.left.carousel-control {left:12% !important;}';
       style.innerHTML += '._3-odHunguDZIT9dHmFF29U { border-right: 1px dotted rgba(255, 255, 255, 0.4); padding-right:25px; }';
+      style.innerHTML += '#bigfoot ._2LrNf_NvtrBLjlIOAsdrUx {font-size:13px;} ';
 
       //append to head
       document.getElementsByTagName('head')[0].appendChild(style);
