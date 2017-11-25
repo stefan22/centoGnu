@@ -18,4 +18,4 @@
 
 
 <kbd>:soccer: banner &nbsp; :zap:</kbd>
-![](../images/FixedFootbanner.png)
+![](images/FixedFootbanner.png)
