@@ -81,8 +81,7 @@ externalScripts();
 
           for (var i = 0; i < xhrp.events.length; i++) {
             tevts = xhrp.events.length;
-            count++;
-
+           
             pre = xhrp.events[i].event;
             odds = xhrp.events[i].betOffers;
             hasexpired = xhrp.events[i].liveData;
@@ -188,25 +187,21 @@ externalScripts();
             //count greater than four  
             else if (count % 4 == 0 && count > 4) {
 
-
-              content += '</div>';
-
-              //if not the last one avoid empty div
-              if (count < tevts -3) {
-
-                content += '<div class="item">';
-
-              }
-              else {
-                
                 content += '</div>';
-                //less than four
-                break;
-              }
 
+                //should i open a new div item?
+                if (tevts - count >= 4) {
+                  content += '<div class="item">';
+                }
+                //if count less need to exit
+                else {
+                    //leave if you dont want a set of less than four
+                    break;
+                }   
 
             } //else if multiple of four
-
+            
+            count++;
           } //for
 
 
