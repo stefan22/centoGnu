@@ -14,6 +14,8 @@
 - Games are then removed when event starts and new ones added every week or as soon as they're made available
   by the Api.    
 - Cta links take to the Sport page where the main widget holds additional information, odds, bets about the games.
+
+### css works really good desktop at any screen size
   
 
 
