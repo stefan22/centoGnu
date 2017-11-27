@@ -21,3 +21,22 @@
 
 <kbd>:soccer: banner &nbsp; :zap:</kbd>
 ![](images/FixedFootbanner.png)
+
+=====================================================
+NOTES
+=====
+ALLCSS IS READY TO WORK ON MOBILE - ALSO LATEST IS ON BROWSER EXTENSION
+READY.
+
+DESKTOP COMPLETED
+======================================================
+
+
+
+
+
+
+
+
+
+
