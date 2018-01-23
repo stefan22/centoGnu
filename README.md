@@ -15,7 +15,7 @@
   by the Api.    
 - Cta links take to the Sport page where the main widget holds additional information, odds, bets about the games.
 
-### css works really good desktop at any screen size
+
   
 
 
@@ -23,13 +23,7 @@
 ![](images/FixedFootbanner.png)
 
 =====================================================
-NOTES
-=====
-ALLCSS IS READY TO WORK ON MOBILE - ALSO LATEST IS ON BROWSER EXTENSION
-READY.
 
-DESKTOP COMPLETED
-======================================================
 
 
 
